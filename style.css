@@ -74,3 +74,8 @@ form button {
     color: white;
     cursor: pointer;
 }
+
+h2 {
+    text-align: center;
+    color: white;
+}
