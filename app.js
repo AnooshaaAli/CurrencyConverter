@@ -203,6 +203,10 @@ const updateFlag = (element) => {
 // exchange rate button functionality
 button.addEventListener("click", async (evt) => {
     evt.preventDefault();
+    updateExchangeRate();
+});
+
+const updateExchangeRate = async () => {
     let amount = parseInt(amountEl.value);
 
     if(amount < 1 || amount === "") {
@@ -216,5 +220,9 @@ button.addEventListener("click", async (evt) => {
     let rate = data[fromCountry][toCountry];
     rate *= amount;
     msg.innerText = `${amount} ${fromCountry.toUpperCase()} = ${rate} ${toCountry.toUpperCase()}`;
-});
+}
 
+// document event listener
+window.addEventListener("load", () => {
+    updateExchangeRate();
+});
