@@ -162,14 +162,17 @@ const countryList = {
 
 const BASE_URL = "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies"
 
+// elements
 const dropdowns = document.querySelectorAll(".dropdown select");
 const msg = document.querySelector(".msg");
 const button = document.querySelector("form button");
 const amountEl = document.querySelector(".amount input");
 
+// variables(default values)
 let fromCountry = "usd";
 let toCountry = "pkr";
 
+// added options of all the currency codes in the dropdowns
 for (let select of dropdowns) {
     for (currCode in countryList) {
         let newOption = document.createElement("option");
@@ -188,6 +191,7 @@ for (let select of dropdowns) {
     })
 }
 
+// update flags function
 const updateFlag = (element) => {
     let currCode = element.value;
     let countryCode = countryList[currCode];
@@ -196,6 +200,7 @@ const updateFlag = (element) => {
     img.src = imgURL;
 };
 
+// exchange rate button functionality
 button.addEventListener("click", async (evt) => {
     evt.preventDefault();
     let amount = parseInt(amountEl.value);
