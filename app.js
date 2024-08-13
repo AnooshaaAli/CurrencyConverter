@@ -207,8 +207,9 @@ button.addEventListener("click", async (evt) => {
 
     let URL = BASE_URL + "/" + fromCountry + ".json";
     let response = await fetch(URL);
-    let data = response.json();
-    let dataObj = data.result;
-    console.log(dataObj);
+    let data = await response.json();
+    let rate = data[fromCountry][toCountry];
+    rate *= amount;
+    msg.innerText = `${amount} ${fromCountry.toUpperCase()} = ${rate} ${toCountry.toUpperCase()}`;
 });
 
