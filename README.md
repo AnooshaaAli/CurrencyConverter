@@ -11,19 +11,19 @@ This is a readme file for a currency converter webpage built with JavaScript.
 
 ### Screenshots of the Interface
 
-##Default View
+## Default View
 
 ![image](https://github.com/user-attachments/assets/f2ef7efb-32a3-49a3-aee7-cff2bc761f1a)
 
-##100USD TO PKR
+## 100USD TO PKR
 
 ![image](https://github.com/user-attachments/assets/0f573057-a524-4315-bacb-27691f0225f0)
 
-##10EUR TO PKR
+## 10EUR TO PKR
 
 ![image](https://github.com/user-attachments/assets/2571e5c8-8ecb-44fa-aa98-11e035b1c84f)
 
-##10AUD TO JPY
+## 10AUD TO JPY
 
 ![image](https://github.com/user-attachments/assets/e8784553-87eb-4b7d-a27f-ac5212e919fd)
 
